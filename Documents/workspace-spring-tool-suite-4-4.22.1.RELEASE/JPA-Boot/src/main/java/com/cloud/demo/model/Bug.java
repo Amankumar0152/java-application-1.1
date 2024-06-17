@@ -9,6 +9,7 @@ public class Bug
 	@Id
 	private int aid;
 	private String aname;
+	private String tech;
 	
 	public int getAid() {
 		return aid;
@@ -22,10 +23,20 @@ public class Bug
 	public void setAname(String aname) {
 		this.aname = aname;
 	}
+	public String gettech()
+	{
+		return tech;
+	}
+	public void settech(String tech)
+	{
+		this.tech = tech;
+	}
+	
 	@Override
 	public String toString() {
-		return "Bug [aid=" + aid + ", aname=" + aname + "]";
+		return "Bug [aid=" + aid + ", aname=" + aname + ", tech=" + tech + "]";
 	}
+	
 	
 	
 }
